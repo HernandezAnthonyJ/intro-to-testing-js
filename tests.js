@@ -32,7 +32,45 @@ it('should return "Hello, Alex!" when called with "Alex"', function () {
 it('should return "Hello, Pat!" when called with "Pat"', function () {
     expect(sayHello("Pat")).toBe("Hello, Pat!");
 });
+it('should return "Hello, World!" when called with no argument', function () {
+    expect(sayHello()).toBe("Hello, World!");
+});
 
+it('should return "Hello, World!" when called with true', function () {
+    expect(sayHello(true)).toBe("Hello, World!");
+});
+
+it('should return "Hello, World!" when called with false', function () {
+    expect(sayHello(false)).toBe("Hello, World!");
+});
+
+it('should return "Hello, World!" when called with null', function () {
+    expect(sayHello(null)).toBe("Hello, World!");
+});
+
+it('should return "Hello, World!" when called with an empty string', function () {
+    expect(sayHello("")).toBe("Hello, World!");
+});
+
+it('should return "Hello, World!" when called with a number', function () {
+    expect(sayHello(2.3)).toBe("Hello, World!");
+});
+
+it('should return "Hello, World!" when called with a number inside a string', function () {
+    expect(sayHello("5")).toBe("Hello, World!");
+});
+
+it('should return "Hello, World!" when called with an empty array', function () {
+    expect(sayHello([])).toBe("Hello, World!");
+});
+
+it('should return "Hello, World!" when called with an empty object', function () {
+    expect(sayHello({})).toBe("Hello, World!");
+});
+
+it('should return "Hello, World!" when called with a function', function () {
+    expect(sayHello(function() {})).toBe("Hello, World!");
+});
 
 
 
