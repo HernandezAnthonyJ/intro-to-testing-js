@@ -8,3 +8,6 @@ function sayHello() {
 function sayHello() {
     return '';
 }
+function sayHello(name) {
+    return "Hello, " + name + "!";
+}
