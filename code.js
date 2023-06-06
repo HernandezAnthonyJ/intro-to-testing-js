@@ -18,6 +18,17 @@ function isFive(input) {
     return input === 5 || input === "5";
 }
 
+function isEven(input) {
+    if (typeof input === 'number') {
+        return input % 2 === 0;
+    } else if (typeof input === 'string') {
+        const num = parseInt(input);
+        return !isNaN(num) && num % 2 === 0;
+    }
+    return false;
+}
+
+
 
 
 
