@@ -11,3 +11,11 @@ function sayHello() {
 function sayHello(name) {
     return "Hello, " + name + "!";
 }
+function sayHello(name) {
+    if (name === "Alex") {
+        return "Hello, Alex!";
+    } else {
+        return "Hello, Jane!";
+    }
+}
+
