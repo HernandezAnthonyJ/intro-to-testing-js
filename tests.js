@@ -29,6 +29,10 @@ it('should return "Hello, Jane!" when called with "Jane"', function (){
 it('should return "Hello, Alex!" when called with "Alex"', function () {
     expect(sayHello("Alex")).toBe("Hello, Alex!");
 });
+it('should return "Hello, Pat!" when called with "Pat"', function () {
+    expect(sayHello("Pat")).toBe("Hello, Pat!");
+});
+
 
 
 
